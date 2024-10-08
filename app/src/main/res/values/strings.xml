@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EverythingMinecraft</string>
+    <string name="title">Welcome to Everything Minecraft!</string>
+    <string name="description">Your source to anything you need to know about Minecraft</string>
+    <string name="search">Search</string>
+    <string name="unimplemented_feature">Sorry, this app is still in progress.
+        Some features or information may not be added yet</string>
+
+
+    <string name="dirt">Dirt</string>
+    <string name="dirt_description">Write some random stuff about how dirt is cool.</string>
+</resources>
