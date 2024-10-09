@@ -7,6 +7,18 @@
         Some features or information may not be added yet</string>
 
 
+    <string name="hardness">Hardness</string>
+    <string name="tool">Tool</string>
+    <string name="small_shovel_icon_description">A image of a shovel</string>
+    <string name="breaking_time_title">Breaking time (sec)</string>
+    <string name="breaking_default">Default</string>
+
+
     <string name="dirt">Dirt</string>
-    <string name="dirt_description">Write some random stuff about how dirt is cool.</string>
+    <string name="dirt_description">Dirt is a block found abundantly in most biomes under a layer
+        of grass blocks at the top of the Overworld.</string>
+    <string name="dirt_hardness_value">0.5</string>
+    <string name="dirt_block_image_description">3D image of a Dirt Block</string>
+    <string name="dirt_breaking_default_value">0.75</string>
+
 </resources>

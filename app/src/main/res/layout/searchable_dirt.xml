@@ -13,22 +13,141 @@
         android:layout_height="wrap_content"
         android:text="@string/dirt"
         android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <TextView
         android:id="@+id/txt_descriptionDirt"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dirt_description"
+        android:textSize="@dimen/text_size_small"
+        android:padding="@dimen/padding_text_small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ImageView
+        android:id="@+id/img_dirtBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/dirt_block_image_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        app:srcCompat="@drawable/minecraft_dirt_block" />
+
+    <TableLayout
+        android:id="@+id/tbl_dirtBreaking"
+        android:layout_width="154dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409">
+
+        <TableRow
+            android:id="@+id/tblR_dirtHardness"
+            android:layout_width="match_parent"
+            android:layout_height="186dp" >
+
+            <TextView
+                android:id="@+id/txt_dirtHardness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/table_grey"
+                android:text="@string/hardness" />
+
+            <TextView
+                android:id="@+id/txt_dirtHardnessValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/dirt_hardness_value" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblR_dirtTool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/txt_dirtTool"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/table_grey"
+                android:text="@string/tool" />
+
+            <ImageView
+                android:id="@+id/img_dirtShovelIcon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/small_shovel_icon_description"
+                android:gravity="center"
+                app:srcCompat="@drawable/small_shovel_icon" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblR_breakingTimeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_breakingTimeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/table_grey"
+                android:text="@string/breaking_time_title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblR_dirtDefaultBreaking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_dirtDefaultBreaking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/table_grey"
+                android:text="@string/breaking_default" />
+
+            <TextView
+                android:id="@+id/txt_dirtDefaultBreakingValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/table_green"
+                android:text="@string/dirt_breaking_default_value" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
